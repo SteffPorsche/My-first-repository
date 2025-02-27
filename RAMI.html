@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .diagram {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 40px;
+      }
+      .box {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        text-align: center;
+        background-color: #f9f9f9;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+      }
+      .line {
+        border-top: 2px solid #333;
+        height: 2px;
+      }
+      .arrow {
+        text-align: center;
+        margin-top: -20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>RAMI-Schichtmodell - Lackiererei 1</h1>
+
+    <!-- Diagramm 1: Schichtaufbau -->
+    <section>
+      <h2>1. Schichtaufbau des RAMI-Modells</h2>
+      <div class="diagram">
+        <div class="box">Business</div>
+        <div class="box">Functional</div>
+        <div class="box">Information</div>
+        <div class="box">Communication</div>
+        <div class="box">Integration</div>
+        <div class="box">Asset</div>
+      </div>
+    </section>
+
+    <!-- Diagramm 2: Datenfluss durch die Schichten -->
+    <section>
+      <h2>2. Datenfluss von Microservices in der Lackiererei</h2>
+      <div class="diagram">
+        <div class="box">Sensor - Fehlererkennung</div>
+        <div class="arrow">&#8595;</div>
+        <div class="box">Datenaggregation</div>
+        <div class="arrow">&#8595;</div>
+        <div class="box">Zentraleanlagenüberwachung</div>
+        <div class="arrow">&#8595;</div>
+        <div class="box">Optimierung (Planungssystem)</div>
+        <div class="arrow">&#8595;</div>
+        <div class="box">Bericht (Historian, WIS)</div>
+      </div>
+    </section>
+
+    <!-- Diagramm 3: RAMI in der Automobil-Lackiererei -->
+    <section>
+      <h2>3. RAMI angewandt auf die Lackiererei 1</h2>
+      <div class="diagram">
+        <div class="box">Geschäftsmodelle</div>
+        <div class="line"></div>
+        <div class="box">Datenfluss der Lackiererei</div>
+        <div class="line"></div>
+        <div class="box">Microservices vs Funktionalität</div>
+        <div class="line"></div>
+        <div class="box">Berichtswesengenerierung</div>
+        <div class="line"></div>
+        <div class="box">Sensorüberwachung</div>
+      </div>
+    </section>
+  </body>
+</html>
